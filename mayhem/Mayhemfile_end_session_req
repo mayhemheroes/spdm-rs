@@ -1,0 +1,8 @@
+project: spdm-rs
+target: end_session_req
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/end_session_req/testsuite
+cmds:
+  - cmd: /mayhem/end_session_req
+    libfuzzer: true

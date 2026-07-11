@@ -1,0 +1,8 @@
+project: spdm-rs
+target: get_encapsulated_request_rsp
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/get_encapsulated_request_rsp/testsuite
+cmds:
+  - cmd: /mayhem/get_encapsulated_request_rsp
+    libfuzzer: true

@@ -1,0 +1,8 @@
+project: spdm-rs
+target: keyexchange_rsp
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/keyexchange_rsp/testsuite
+cmds:
+  - cmd: /mayhem/keyexchange_rsp
+    libfuzzer: true

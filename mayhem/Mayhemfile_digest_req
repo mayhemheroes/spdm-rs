@@ -1,0 +1,8 @@
+project: spdm-rs
+target: digest_req
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/digest_req/testsuite
+cmds:
+  - cmd: /mayhem/digest_req
+    libfuzzer: true

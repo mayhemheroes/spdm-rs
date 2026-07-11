@@ -1,0 +1,8 @@
+project: spdm-rs
+target: fuzz_x509v3
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_x509v3/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_x509v3
+    libfuzzer: true

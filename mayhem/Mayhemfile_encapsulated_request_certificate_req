@@ -1,0 +1,8 @@
+project: spdm-rs
+target: encapsulated_request_certificate_req
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/encapsulated_request_certificate_req/testsuite
+cmds:
+  - cmd: /mayhem/encapsulated_request_certificate_req
+    libfuzzer: true

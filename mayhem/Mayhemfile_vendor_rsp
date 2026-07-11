@@ -1,0 +1,8 @@
+project: spdm-rs
+target: vendor_rsp
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/vendor_rsp/testsuite
+cmds:
+  - cmd: /mayhem/vendor_rsp
+    libfuzzer: true

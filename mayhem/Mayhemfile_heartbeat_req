@@ -1,0 +1,8 @@
+project: spdm-rs
+target: heartbeat_req
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/heartbeat_req/testsuite
+cmds:
+  - cmd: /mayhem/heartbeat_req
+    libfuzzer: true
